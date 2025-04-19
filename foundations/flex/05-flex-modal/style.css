@@ -2,6 +2,8 @@
 
 html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -20,6 +22,22 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.content-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: larger;
+  font-weight: bold;
 }
 
 .icon {
@@ -33,6 +51,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  flex: none;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
 }
 
 .close-button {
@@ -48,6 +78,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex: none;
 }
 
 button {
